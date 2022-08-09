@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Title_Screen.unity
+    guid: 63e8005fb40ab4ecf99f092dd60017e1
+  - enabled: 1
+    path: Assets/scenes 1/Intro_Animatic.unity
+    guid: d1796d711d2924e3a90d420d3d02bdfb
+  - enabled: 1
+    path: Assets/Homton_Hero-House.unity
+    guid: f00f181acd1ee418e93ef9ea20136c27
+  - enabled: 1
+    path: Assets/homton_expository.unity
+    guid: 8bb814d4cf3ec438795fcf75cdc152cc
+  - enabled: 1
+    path: Assets/Homton_Outskirts.unity
+    guid: 5b10f2a7b27d447e9b4f236afffcc03a
+  - enabled: 1
+    path: Assets/Homton-dev-base.unity
+    guid: 292da7aff76d04d089a0d0ff5ff8359a
+  - enabled: 0
+    path: Assets/Homton_hhero.unity
+    guid: ea267323a1a2a43ec9f4e1570abf0027
+  - enabled: 1
+    path: Assets/homton_construction_CP0.unity
+    guid: 719cb1f5d3ba542a0b0aaab395fef7d9
+  - enabled: 1
+    path: Assets/Homton_construction_CP1.unity
+    guid: 925abd2466cc74ce38ca1e1257e2a198
+  - enabled: 1
+    path: Assets/Homton_construction_CP2.unity
+    guid: b86bcb157fe5549c3adca320323e2d3b
+  - enabled: 1
+    path: Assets/Homton_construction_CP3.unity
+    guid: 1f67ff8bbfb364255b154cd635d6aafa
+  - enabled: 1
+    path: Assets/Homton_construct_CP4.unity
+    guid: b52fb311932f446b2bdee6f8f2b3b7e7
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Homton_SandyHole_1.unity
+    guid: 2bcf7d4ee238b481da88dec86ffdbe73
+  - enabled: 0
+    path: Assets/Homton_template.unity
+    guid: 03b3461e1d80b4298ab87a34e24ba736
+  - enabled: 0
+    path: Assets/Homton_city_ side.unity
+    guid: 97291e6ab91404340999989906e6437f
+  - enabled: 0
+    path: Assets/homton_cityside1.unity
+    guid: d77b85ae081c54713a438c31135bc29e
+  - enabled: 0
+    path: Assets/homton_cityside2.unity
+    guid: 37053d1596c7b42e3bcbfc7db58f4829
+  - enabled: 1
+    path: Assets/homton_city-1.unity
+    guid: a7c61d5f3a7c2483f96f561dbe75193d
+  - enabled: 0
+    path: Assets/homton_city1.unity
+    guid: 5acbf2fc0e1c34e7c8cd88a069fbbac1
+  - enabled: 1
+    path: Assets/homton_city2.unity
+    guid: 3e9f419897e9c4e6291f220718548154
+  - enabled: 1
+    path: Assets/Drone_shop.unity
+    guid: f2442d855eee741aa8037c6b337df3a6
+  - enabled: 1
+    path: Assets/homton_citydrone.unity
+    guid: d64d40df4004a4437b16eb32a5e6a1ab
+  - enabled: 0
+    path: Assets/homton_city_1.unity
+    guid: 4ff7161503d7d42388ab8d44371c8548
+  - enabled: 0
+    path: Assets/homton_city_2.unity
+    guid: 93f9d28e4f0b74e679af6455561072a8
+  - enabled: 0
+    path: Assets/homton_cityside_drone.unity
+    guid: 00bba2aa11ef246dda43cee2ddd31839
+  - enabled: 0
+    path: Assets/homton_city_drone.unity
+    guid: 6f2d2c85c1f7044c08765e1d812caae5
+  - enabled: 1
+    path: Assets/the_internet_facility.unity
+    guid: 54a0b44981d084529b5ec1865afbf31d
+  - enabled: 1
+    path: Assets/the_internet_facility2.unity
+    guid: c692113ddd19f4674a6e5fe7b6499e7d
+  - enabled: 1
+    path: Assets/the_internet_facility3.unity
+    guid: 68ceb8e3bdc1f40829b8acbec804e74d
+  - enabled: 0
+    path: Assets/homton_outro.unity
+    guid: 220fbb0b08c374a9a9bd909785bfeca6
+  - enabled: 1
+    path: Assets/Homton_outro_v2.unity
+    guid: 44cc2607f89b845e8bef88a645dddcda
+  - enabled: 0
+    path: Assets/Animations/Animations beta/l.unity
+    guid: f11966bbf2bbf4ee08aa97851f889cee
+  - enabled: 0
+    path: Assets/testcamera.unity
+    guid: eed993ce58dd24724a3a22f48286f119
+  - enabled: 1
+    path: Assets/Homton_constuction_CP5.unity
+    guid: d37ba13312491471a9db48280aab8084
+  - enabled: 1
+    path: Assets/Homton_Outskirts_CP1.unity
+    guid: f62e0407d638044578fe021ba21d34b1
+  - enabled: 1
+    path: Assets/Homton_construction_CP2-5.unity
+    guid: 30ee3ea971c874a90902b6195acb1067
+  - enabled: 1
+    path: Assets/THX4PLAYING.unity
+    guid: e06a20d0d50314765a1235bf0ba1d644
+  m_configObjects: {}
