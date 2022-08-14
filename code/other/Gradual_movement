@@ -1,0 +1,109 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Gradual_movementRL : MonoBehaviour
+{
+    private Rigidbody2D rb;
+    float Speed;
+    public float MaxSpeed;
+    public float Acceleration;
+    public float Decceleration;
+    
+
+    private bool IsGrounded;
+    public Transform FeetPos;
+    public float CheckRadius;
+    public LayerMask WhatIsGround;
+    public float DefaultJumpForce;
+    public float JumpForce;
+    float JumpTime;
+    public float DefaultJumpTime;
+
+    bool IsJumping;
+
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>(); 
+    }
+    private void FixedUpdate()
+    {
+        if ((Input.GetKey("a")) && (Speed > -MaxSpeed)) {
+            Speed = Speed - Acceleration;
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+        else if ((Input.GetKey("d")) && (Speed < MaxSpeed))
+        {
+            Speed = Speed + Acceleration;
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+            
+        else
+        {
+            if (Speed > Decceleration)
+                Speed = Speed - Decceleration;
+            else if (Speed < -Decceleration)
+                Speed = Speed + Decceleration;
+            else
+                Speed = 0;
+        }
+        rb.velocity = new Vector2(Speed, rb.velocity.y);
+
+    }
+    private void Update()
+    {
+        IsGrounded = Physics2D.OverlapCircle(FeetPos.position, CheckRadius, WhatIsGround);
+            if (IsGrounded == true && Input.GetKeyDown(KeyCode.Space))
+        {
+            IsJumping = true;
+            JumpTime = DefaultJumpTime;
+            rb.velocity = Vector2.up * JumpForce;
+        }
+            if (Input.GetKey(KeyCode.Space) && IsJumping == true)
+        {
+            if(JumpTime > 0) {
+                JumpForce = DefaultJumpForce;
+                rb.velocity = Vector2.up * JumpForce;
+                
+                JumpTime -= Time.deltaTime;
+                if (JumpTime < 0.4)
+                {
+                    JumpForce += 3.5f;
+                    rb.velocity = Vector2.up * JumpForce;
+                    
+                }
+                if (JumpTime < 0.3)
+                {
+                    JumpForce += 3.5f;
+                    rb.velocity = Vector2.up * JumpForce;
+                   
+                }
+                if (JumpTime < 0.2)
+                {
+                    JumpForce += 3.5f;
+                    rb.velocity = Vector2.up * JumpForce;
+
+                }
+                if (JumpTime < 0.1)
+                {
+                    JumpForce += 3.5f;
+                    rb.velocity = Vector2.up * JumpForce;
+
+                }
+            }
+            else
+            {
+                IsJumping = false;
+            }
+            
+
+           
+        }
+            if (Input.GetKeyUp(KeyCode.Space)){
+            IsJumping = false;
+        }
+    }
+}
+
+
